@@ -3,12 +3,13 @@
 using namespace std;
 
 int main(){
-    Pessoa p;
-    p.setNome("Nome");
-    p.setSobrenome("Sobrenome");
-    p.setCPF(123456789);
-
+    Endereco e ("barao do triunfo", 22,"brooklyn");
+    Pessoa p("Nome","Sobrenome",123456789,9,11,2024,e);
+    
+    
     cout<<"Dados da pessoa" << endl;
     cout<< "Nome:"<< p.getNome()<<"; Sobrenome:"<<p.getSobrenome()<< endl;
     cout<< "CPF:"<<p.getCPF()<< endl;
+    cout<< "Nascimento: "<<p.getNascimento()<<endl;
+    cout<< "Endereco: " << p.getLocal()<< endl;
 }
